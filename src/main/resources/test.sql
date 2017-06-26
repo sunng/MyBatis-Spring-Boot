@@ -1,4 +1,4 @@
-﻿USE `test`;
+﻿USE `mybatis-spring-boot`;
 
 DROP TABLE IF EXISTS `country`;
 CREATE TABLE `country` (

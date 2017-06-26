@@ -64,4 +64,8 @@ public class CityService {
             cityMapper.insert(country);
         }
     }
+
+    public List test() {
+        return cityMapper.test();
+    }
 }

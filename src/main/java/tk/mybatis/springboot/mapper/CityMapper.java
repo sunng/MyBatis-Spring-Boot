@@ -24,12 +24,19 @@
 
 package tk.mybatis.springboot.mapper;
 
+import org.apache.ibatis.annotations.Select;
 import tk.mybatis.springboot.model.City;
 import tk.mybatis.springboot.util.MyMapper;
+
+import java.util.List;
+import java.util.Map;
 
 /**
  * @author liuzh_3nofxnp
  * @since 2016-01-22 22:17
  */
 public interface CityMapper extends MyMapper<City> {
+
+    @Select("select * from user_info, country where country.id = user_info.id and user_info.id = 1")
+    List<Map> test();
 }

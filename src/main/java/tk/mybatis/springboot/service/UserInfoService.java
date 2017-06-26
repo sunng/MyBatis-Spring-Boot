@@ -64,4 +64,7 @@ public class UserInfoService {
             userInfoMapper.insert(country);
         }
     }
+
+    public static void main(String[] args) {
+    }
 }
